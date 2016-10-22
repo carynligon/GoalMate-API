@@ -13,5 +13,8 @@ Rails.application.routes.draw do
 
   get 'users/destroy'
 
+  get 'exit', to 'sessions#destroy', as: :logout
+  get 'login', to 'sessions#create', as: :login
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
