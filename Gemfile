@@ -5,9 +5,10 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 gem 'spring', :group => :development
 
-
+gem 'tzinfo-data'
+gem 'listen'
 gem 'sqlite3'
-
+gem 'wdm', '>= 0.1.0'
 
 
 # To use ActiveModel has_secure_password
