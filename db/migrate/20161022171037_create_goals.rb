@@ -4,6 +4,7 @@ class CreateGoals < ActiveRecord::Migration[5.0]
     t.string :name
     t.text :description
     t.boolean :completed
+    t.timestamps
     end
   end
 end
