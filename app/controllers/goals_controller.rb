@@ -2,7 +2,6 @@ class GoalsController < ApplicationController
 	 # before_action :set_user
   def index
     @goals = Goal.all
-    binding.pry
     render json: @goals
   end
 
