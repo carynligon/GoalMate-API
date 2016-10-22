@@ -9,8 +9,8 @@ gem 'tzinfo-data'
 gem 'listen'
 
 gem 'sqlite3'
-gem 'wdm', '>= 0.1.0'
-
+#gem 'wdm', '>= 0.1.0'
+gem 'pry'
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
