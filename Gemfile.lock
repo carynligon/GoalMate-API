@@ -42,7 +42,6 @@ GEM
     builder (3.2.2)
     concurrent-ruby (1.0.2)
     erubis (2.7.0)
-    ffi (1.9.14)
     ffi (1.9.14-x86-mingw32)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
@@ -95,6 +94,10 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+<<<<<<< HEAD
+=======
+    ruby_dep (1.3.1)
+>>>>>>> 6988aa3f9207c9f9638805e1516ec9f33f2bfca1
     spring (2.0.0)
       activesupport (>= 4.2)
     sprockets (3.7.0)
