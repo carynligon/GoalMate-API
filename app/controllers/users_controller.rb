@@ -1,8 +1,11 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: [:show, :update, :destroy]
+
   def index
   end
 
   def show
+    render json: @user
   end
 
   def new
@@ -29,5 +32,9 @@ class UsersController < ApplicationController
   private
     def user_params
       params.require(:user).permit(:email, :password, :first_name, :last_name, :zipcode, :bio, :goals)
+    end
+
+    def set_user
+      @user = User.find(session[:id])
     end
 end
