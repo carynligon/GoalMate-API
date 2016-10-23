@@ -11,7 +11,8 @@ class GoalsController < ApplicationController
   end
 
   def create
-    @goal = Goal.new(goal_params)
+    @user = current_user
+    @goal = Goal.new(goal_params, user:@user)
     if @goal.save
       render json: @goal
     else
@@ -39,8 +40,4 @@ class GoalsController < ApplicationController
   def goal_params
     params.require(:goal).permit(:name, :description)
   end
-
-  # def set_user
-  #   @user = User.find(params[:user_id])
-  # end
 end

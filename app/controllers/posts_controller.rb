@@ -11,7 +11,8 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Goal.posts.new(post_params)
+    @user = current_user
+    @post = Goal.posts.new(post_params, user:@user)
     if @goal.save
       render json: @post
     else
@@ -41,6 +42,6 @@ class PostsController < ApplicationController
   end
 
   def set_user
-    @user = User.find(current_user)
+    @user = current_user
   end
 end
