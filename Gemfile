@@ -15,6 +15,9 @@ gem 'pry'
 # To use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+gem 'rack-cors', :require => 'rack/cors'
+
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
