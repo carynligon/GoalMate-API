@@ -1,5 +1,6 @@
 User.destroy_all
 Goal.destroy_all
+Tip.destroy_all
 
 jess = User.create(first_name: 'Jess', last_name: 'Bohn', email: 'jess@jess.com', password: 'cat', zipcode: '78748')
 kim = User.create(first_name: 'Kim', last_name: 'Patton', email: 'kim@kim.com', password: 'password', zipcode: '78748')
@@ -20,5 +21,5 @@ caryn.goals << starwars << foodie << everest
 david.goals << everest << marathon << foodie
 carlos.goals << everest << python << foodie << bass_guitar
 
-# everest.posts << Tip.create(type: 'tip', content: 'Dress warm!')
-# everest.posts << Tip.create(type: 'tip', content: "Be sure to fully prepare yourself for this trip in the weeks/month leading up to your actual climb! You wouldn't want to miss out on great feat just becuase your mind was someone else and forgot to pack certain essentials")
+# everest.posts << Post.create(type: 'Tip', content: 'Dress warm!')
+# everest.posts << Post.create(type: 'Tip', content: "Be sure to fully prepare yourself for this trip in the weeks/month leading up to your actual climb! You wouldn't want to miss out on great feat just becuase your mind was someone else and forgot to pack certain essentials")
