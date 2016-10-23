@@ -6,7 +6,6 @@ class PostsController < ApplicationController
 	end
 
   def show
-  	binding.pry
     @posts = Goal.posts.find(params[:goal_id])
     render json: @posts
   end
@@ -41,7 +40,7 @@ class PostsController < ApplicationController
     params.require(:post).permit(:type, :content)
   end
 
-  # def set_user
-  #   @user = User.find(params[:user_id])
-  # end
+  def set_user
+    @user = User.find(current_user)
+  end
 end
