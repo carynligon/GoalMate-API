@@ -8,7 +8,7 @@ gem 'spring', :group => :development
 gem 'tzinfo-data'
 gem 'listen', '~> 3.0.8'
 
-gem 'sqlite3'
+gem 'pg', '~> 0.18'
 # gem 'wdm', '>= 0.1.0'
 gem 'pry'
 
