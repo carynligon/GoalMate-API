@@ -1,9 +1,13 @@
 class GoalsController < ApplicationController
 	 # before_action :set_user
+  def index
+    @goals = Goal.all
+    render json: @goals
+  end
 
   def show
-    @goals = Goal.find(params[:id])
-    render json: @goals
+    @goal = Goal.find(params[:id])
+    render json: @goal
   end
 
   def create
